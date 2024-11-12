@@ -32,7 +32,7 @@ namespace Tyuiu.BorkovNA.Sprint4.Task0.V20
             Console.WriteLine("****************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                               *");
             Console.WriteLine("****************************************************************************");
-            int res = ds.GetMultOddArrEl(input);
+            int res = ds.Calculate(input);
             Console.WriteLine(res);
             Console.ReadKey();
 
