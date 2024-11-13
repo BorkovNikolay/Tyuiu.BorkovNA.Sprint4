@@ -1,5 +1,6 @@
 ﻿using System;
 using Tyuiu.BorkovNA.Sprint4.Task6.V22.Lib;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 
 
@@ -27,13 +28,21 @@ namespace Tyuiu.BorkovNA.Sprint4.Task6.V22
             Console.WriteLine("*                                                                          *");
             Console.WriteLine("****************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                         *");
+            Console.WriteLine("* \"Снег\", \"Дождь\", \"Туман\", \"Град\", \"Ветер\", \"Туча\", \"Засуха\"   *");
             string[] input = { "Снег", "Дождь", "Туман", "Град", "Ветер", "Туча", "Засуха" };
             Console.WriteLine("****************************************************************************");
             Console.WriteLine("****************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                               *");
             Console.WriteLine("****************************************************************************");
-            int res = ds.Calculate(input);
-            Console.WriteLine(res);
+            string[] res = ds.Calculate(input);
+            for (int i = 0; i < res.Length; i++) 
+                {
+                     Console.WriteLine(res[i]);
+                } 
+
+     
+
+
             Console.ReadKey();
 
         }

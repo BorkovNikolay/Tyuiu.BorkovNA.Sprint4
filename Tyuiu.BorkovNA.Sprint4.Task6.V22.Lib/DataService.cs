@@ -6,8 +6,8 @@ namespace Tyuiu.BorkovNA.Sprint4.Task6.V22.Lib
     {
         public string[] Calculate(string[] array)
         {
-            string[] a = Array.FindAll(array, x => x.Length > 4);
-            return a.Length;
+            string[] a = Array.FindAll(array, x => x.Length == 4);
+            return a;
 
         }
     }
